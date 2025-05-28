@@ -1,4 +1,4 @@
-/* style.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body {
@@ -32,22 +32,22 @@ body {
   color: #0d6efd !important;
 }
 
-/* Buttons: beige bg, black text */
+
 .btn-rounded {
   background-color: #F5F5DC;
-  color: #000 !important;       /* text in black */
+  color: #000 !important;      
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 0.5rem 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-rounded:hover {
-  background-color: #343a40;    /* same as navbar bg */
-  color: #fff !important;       /* text turns white on hover */
+  background-color: #343a40;    
+  color: #fff !important;       
   border-color: #343a40;
 }
 
-/* Project cards (unchanged) */
+
 .project-card {
   border: 1px solid #e1e1e1;
   border-radius: 8px;
