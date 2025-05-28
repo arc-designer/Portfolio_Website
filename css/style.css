@@ -1,0 +1,110 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  font-family: 'Courier Prime', monospace;
+  background-color: #F5E9DA;    /* Cozy pastel beige */
+  color: #212529;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #dee2e6;
+  transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+.nav-link {
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+/* Buttons: beige bg, black text */
+.btn-rounded {
+  background-color: #F5F5DC;
+  color: #000 !important;       /* text in black */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-rounded:hover {
+  background-color: #343a40;    /* same as navbar bg */
+  color: #fff !important;       /* text turns white on hover */
+  border-color: #343a40;
+}
+
+/* Project cards (unchanged) */
+.project-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+.project-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+body.dark-mode {
+  background-color: #2E2E2E;
+  color: #f0f0f0;
+}
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+.dark-mode .nav-link:hover {
+  color: #66b2ff !important;
+}
+.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+  .btn-rounded {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+}
